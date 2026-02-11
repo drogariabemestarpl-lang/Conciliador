@@ -1,7 +1,19 @@
-# Backups do concilia_core
+# Backups (Concilia)
 concilia_core-*.py
 concilia-core-*.py
-*backup*.py
 *bkp*.py
+*backup*.py
 * - Copy.py
 * - Cópia.py
+
+# Pastas locais
+backups/
+logs/
+db/
+*.db
+*.sqlite
+*.sqlite3
+*.ofx
+*.pdf
+*.csv
+*.xlsx
