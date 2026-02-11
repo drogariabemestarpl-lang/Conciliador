@@ -1,0 +1,7 @@
+# Backups do concilia_core
+concilia_core-*.py
+concilia-core-*.py
+*backup*.py
+*bkp*.py
+* - Copy.py
+* - Cópia.py
