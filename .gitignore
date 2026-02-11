@@ -6,6 +6,8 @@ concilia-core-*.py
 * - Copy.py
 * - Cópia.py
 
+
+
 # Pastas locais
 backups/
 logs/
@@ -17,3 +19,6 @@ db/
 *.pdf
 *.csv
 *.xlsx
+
+__pycache__/
+*.pyc

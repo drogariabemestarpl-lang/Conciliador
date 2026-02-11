@@ -23,6 +23,7 @@ Rodar:
 from __future__ import annotations
 
 import tkinter as tk
+from step2_providers import get_provider
 from tkinter import ttk, filedialog, messagebox, simpledialog
 from dataclasses import dataclass
 from pathlib import Path
@@ -5381,7 +5382,8 @@ class App(tk.Tk):
             if cur_cols != need_cols_std:
                 self._configure_step2_tree(prov)
 
-        df = run_step2_recebiveis(self.conn, prov, m, d1, d2, window_days=0)
+        provider = get_provider(prov, run_step2_recebiveis)
+        df = provider.run_step2(self.conn, prov, m, d1, d2, window_days=0)
 
         for i in self.s2_tree.get_children():
             self.s2_tree.delete(i)
